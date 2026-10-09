@@ -1,0 +1,1385 @@
+/* ==================================================
+   SERVICES SECTION
+================================================== */
+
+.services-section {
+    width: 100%;
+    background-color: white;
+}
+
+
+/* ==================================================
+   LOAN BANNER
+================================================== */
+
+.loan-banner {
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #3d5577;
+    color: white;
+}
+
+.loan-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+    font-size: 14px;
+}
+
+.loan-content p {
+    margin: 0;
+}
+
+.loan-content strong {
+    font-weight: 700;
+}
+
+.loan-icon {
+    width: 38px;
+    height: 38px;
+
+    object-fit: contain;
+}
+
+.loan-content button {
+    padding: 8px 14px;
+
+    border: none;
+    border-radius: 4px;
+
+    background-color: white;
+    color: #444;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.loan-content button:hover {
+    background-color: #f5f5f5;
+}
+
+
+/* ==================================================
+   SERVICES
+================================================== */
+
+.service-list {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    padding: 28px 5% 42px;
+
+    background-color: white;
+}
+
+.service-item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+
+    min-height: 125px;
+}
+
+.service-item img {
+    width: 60px;
+    height: 60px;
+
+    object-fit: contain;
+
+    margin-bottom: 12px;
+}
+
+.service-item p {
+    margin: 0;
+
+    color: #333;
+
+    font-size: 15px;
+}
+
+
+/* ==================================================
+   SERVICE BADGE
+================================================== */
+
+.service-badge {
+    position: absolute;
+
+    top: -5px;
+
+    padding: 4px 10px;
+
+    background-color: #fff0dc;
+
+    border-radius: 15px;
+
+    color: #555;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+}
+
+
+/* ==================================================
+   COMMON SECTION TITLE
+================================================== */
+
+.section-title {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 48px;
+}
+
+.section-title span {
+    height: 1px;
+
+    background-color: #d5d5d5;
+
+    flex: 1;
+
+    position: relative;
+}
+
+.section-title span:first-child {
+    margin-right: 20px;
+}
+
+.section-title span:last-child {
+    margin-left: 20px;
+}
+
+
+/* Left circle */
+
+.section-title span:first-child::after {
+    content: "";
+
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid #ff385c;
+
+    border-radius: 50%;
+
+    background-color: white;
+
+    right: -10px;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+
+/* Right circle */
+
+.section-title span:last-child::before {
+    content: "";
+
+    position: absolute;
+
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid #ff385c;
+
+    border-radius: 50%;
+
+    background-color: white;
+
+    left: -10px;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+
+/* Heading */
+
+.section-title h2 {
+    margin: 0 25px;
+
+    color: #666;
+
+    font-size: 28px;
+
+    font-weight: 400;
+
+    white-space: nowrap;
+}
+
+
+/* ==================================================
+   WHY USE NOBROKER
+================================================== */
+
+.why-nobroker {
+    width: 100%;
+
+    padding: 0 3% 55px;
+
+    background-color: white;
+
+    text-align: center;
+}
+
+.why-list {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 40px;
+}
+
+.why-item {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+.why-item img {
+    width: 80px;
+    height: 80px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+}
+
+.why-item h3 {
+    margin: 0 0 8px;
+
+    color: #333;
+
+    font-size: 17px;
+
+    font-weight: 400;
+}
+
+.why-item p {
+    max-width: 250px;
+
+    margin: 0;
+
+    color: #555;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* ==================================================
+   BUSINESS ASSIST
+================================================== */
+
+.business-assist {
+    width: 100%;
+
+    background-color: #f7f7f7;
+
+    padding: 30px 7% 45px;
+}
+
+.business-content {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 100px;
+
+    min-height: 260px;
+}
+
+.business-image {
+    width: 45%;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.business-image img {
+    width: 300px;
+    height: 230px;
+
+    object-fit: contain;
+}
+
+.business-info {
+    width: 40%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+.business-info > p {
+    margin: 0 0 35px;
+
+    color: #666;
+
+    font-size: 18px;
+}
+
+.business-info button {
+    padding: 14px 28px;
+
+    border: none;
+
+    background-color: #ff385c;
+
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.business-info button:hover {
+    background-color: #e92f50;
+}
+
+.builder-contact {
+    width: 100%;
+
+    margin-top: 0;
+
+    padding-top: 8px;
+
+    border-top: 1px solid #ddd;
+}
+
+.builder-contact p {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   WE MAKE A DIFFERENCE
+================================================== */
+
+.difference-section {
+    width: 100%;
+
+    background-color: white;
+
+    padding: 30px 5% 55px;
+}
+
+.difference-list {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+
+    text-align: center;
+}
+
+.difference-item {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.difference-circle {
+    width: 185px;
+    height: 185px;
+
+    border: 2px solid #ff385c;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 25px;
+}
+
+.difference-circle span {
+    color: #ff385c;
+
+    font-size: 36px;
+
+    font-weight: 300;
+}
+
+.difference-item p {
+    margin: 0;
+
+    color: #333;
+
+    font-size: 20px;
+}
+
+
+/* ==================================================
+   OUR CUSTOMERS
+================================================== */
+
+.customers-section {
+    width: 100%;
+
+    background-color: #344f63;
+
+    padding: 50px 5% 70px;
+
+    text-align: center;
+}
+
+.customers-section h2 {
+    margin: 0 0 40px;
+
+    color: white;
+
+    font-size: 30px;
+
+    font-weight: 400;
+}
+
+
+/* Video */
+
+.video-container {
+    width: 620px;
+
+    max-width: 100%;
+
+    height: 350px;
+
+    margin: 0 auto;
+
+    background-color: #111;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.video-placeholder {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+}
+
+.play-button {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    background-color: #ff385c;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+}
+
+.video-placeholder p {
+    margin: 0;
+
+    font-size: 18px;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 900px) {
+
+    .service-list {
+        grid-template-columns: repeat(3, 1fr);
+
+        row-gap: 30px;
+    }
+
+    .why-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .business-content {
+        gap: 40px;
+    }
+
+    .business-image,
+    .business-info {
+        width: 50%;
+    }
+
+    .difference-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+
+    .difference-circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .difference-circle span {
+        font-size: 18px;
+    }
+
+    .difference-item p {
+        font-size: 10px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .loan-banner {
+        height: auto;
+
+        padding: 12px;
+    }
+
+    .loan-content {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    .service-list {
+        grid-template-columns: repeat(2, 1fr);
+
+        padding: 25px 3%;
+    }
+
+    .why-list {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 22px;
+        margin: 0 15px;
+    }
+
+    .business-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .business-image {
+        height: 5px;
+        height: 5px;
+    }
+    .business-info {
+        width: 100%;
+
+    }
+
+    .business-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .difference-list {
+        grid-template-columns: 1fr;
+    }
+
+    .customers-section h2 {
+        font-size: 18px;
+    }
+
+    .video-container {
+        height: 250px;
+    }
+
+}
+
+/* ==================================================
+   OUR CUSTOMERS LOVES US
+================================================== */
+
+.customers-section {
+    width: 100%;
+
+    background-color: #344f63;
+
+    padding: 45px 5% 45px;
+
+    text-align: center;
+
+    color: white;
+}
+
+
+/* Title */
+
+.customers-section h2 {
+    margin: 0 0 40px;
+
+    color: white;
+
+    font-size: 30px;
+
+    font-weight: 400;
+}
+
+
+/* ==================================================
+   VIDEO
+================================================== */
+
+.customer-video {
+    width: 650px;
+    max-width: 100%;
+    height: 330px;
+    margin: 0 auto 45px;
+    background-color: black;
+}
+
+.customer-video iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* ==================================================
+   TESTIMONIALS
+================================================== */
+
+.testimonial-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: left;
+}
+
+
+/* Testimonial card */
+
+.testimonial-card {
+    min-height: 200px;
+    padding: 18px 20px;
+    background-color: #f8f8f8;
+
+    color: #333;
+}
+
+
+/* User */
+
+.testimonial-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+
+/* User image */
+
+.user-image {
+    width: 38px;
+
+    height: 38px;
+
+    border-radius: 50%;
+
+    background-color: #ddd;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 18px;
+}
+
+
+/* User name */
+
+.testimonial-user h3 {
+    margin: 0 0 4px;
+    color: #222;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+
+/* Stars */
+
+.stars {
+    color: #008c99;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+
+/* Testimonial heading */
+
+.testimonial-card h4 {
+    margin: 0 0 8px;
+    color: #222;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+/* Testimonial text */
+
+.testimonial-card p {
+    margin: 0;
+    color: #444;
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+
+/* ==================================================
+   MORE TESTIMONIALS
+================================================== */
+
+.more-testimonials {
+    display: inline-block;
+    margin-top: 45px;
+    color: white;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.more-testimonials:hover {
+    color: #ddd;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 900px) {
+
+    .testimonial-list {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .testimonial-card {
+        max-width: 600px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .customers-section {
+        padding: 35px 5%;
+    }
+
+    .customers-section h2 {
+        font-size: 24px;
+    }
+
+    .customer-video {
+        height: 240px;
+    }
+
+}
+
+/* ==================================================
+   FIND A NEW HOME ON THE GO
+================================================== */
+
+.app-section {
+    width: 100%;
+
+    min-height: 480px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 150px;
+
+    padding: 60px 8%;
+
+    background-color: white;
+}
+
+.app-image {
+    width: 40%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.phone-placeholder {
+    width: 300px;
+
+    height: 360px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 180px;
+}
+
+.app-content {
+    width: 45%;
+}
+
+.app-content h2 {
+    margin: 0 0 45px;
+    color: #090909;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.app-content h3 {
+    margin: 0 0 8px;
+
+    color: #333;
+
+    font-size: 23px;
+
+    font-weight: 400;
+}
+
+.app-content p {
+    margin: 0 0 70px;
+
+    color: #777;
+
+    font-size: 18px;
+}
+
+.app-buttons {
+    display: flex;
+
+    gap: 25px;
+}
+
+.app-buttons button,
+.footer-apps button {
+    border: none;
+
+    background-color: #050505;
+
+    color: white;
+
+    border-radius: 6px;
+
+    padding: 12px 22px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+/* ==================================================
+   PROPERTY CATEGORY SECTION
+================================================== */
+
+.property-section {
+    width: 100%;
+    background-color: white;
+}
+
+
+/* Category tabs */
+
+.property-tabs {
+    width: 100%;
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: #f8f8f8;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.property-tab {
+    min-height: 90px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+
+    text-align: center;
+
+    color: #333;
+
+    font-size: 15px;
+
+    font-weight: 500;
+}
+
+.property-tab.active {
+    background-color: #eeeeee;
+    color: black;
+    border-bottom: 3px solid #faf8f8;
+}
+
+
+/* Property links */
+
+.property-links {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 45px;
+
+    padding: 35px 5% 60px;
+
+    background-color: white;
+}
+
+.property-column h3 {
+    margin: 0 0 18px;
+
+    color: #333;
+
+    font-size: 17px;
+
+    font-weight: 500;
+}
+
+.property-column a {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #333;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+
+    cursor: pointer;
+}
+
+.property-column a:hover {
+    text-decoration: underline;
+}
+
+
+/* ==================================================
+   NOBROKER SERVICES
+================================================== */
+
+.nobroker-services {
+    width: 100%;
+
+    padding: 35px 5% 55px;
+
+    background-color: white;
+}
+
+.nobroker-services > h2 {
+    margin: 0 0 30px;
+
+    color: #333;
+
+    font-size: 22px;
+
+    font-weight: 600;
+}
+
+.service-columns {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+}
+
+.service-links h3 {
+    margin: 0 0 18px;
+
+    color: #333;
+
+    font-size: 16px;
+
+    font-weight: 400;
+}
+
+.service-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 14px;
+}
+
+.service-tags span {
+    padding: 6px 9px;
+
+    background-color: #eeeeee;
+
+    border-radius: 4px;
+
+    color: #444;
+
+    font-size: 14px;
+
+    line-height: 1.2;
+}
+
+
+/* ==================================================
+   FIND / LIST PROPERTY
+================================================== */
+
+.property-actions {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    background-color: #eeeeee;
+
+    border-top: 1px solid #ddd;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.property-action {
+    min-height: 145px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+.property-action:first-child {
+    border-right: 1px solid #ccc;
+}
+
+.property-action h3 {
+    margin: 0 0 6px;
+
+    color: #333;
+
+    font-size: 19px;
+
+    font-weight: 500;
+}
+
+.property-action p {
+    margin: 0 0 18px;
+
+    color: #555;
+
+    font-size: 14px;
+}
+
+.property-action button {
+    padding: 7px 28px;
+
+    border: none;
+
+    border-radius: 4px;
+
+    background-color: #444;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.footer {
+    width: 100%;
+
+    background-color: white;
+
+    padding: 40px 10% 20px;
+
+    text-align: center;
+}
+
+
+/* Footer links */
+
+.footer-links {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 45px;
+
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #333;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Divider */
+
+.footer-divider {
+    width: 100%;
+
+    height: 1px;
+
+    background-color: #ddd;
+
+    margin: 40px 0;
+}
+
+
+/* Footer apps */
+
+.footer-apps {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 40px;
+
+    margin-bottom: 25px;
+}
+
+.footer-apps button {
+    font-size: 12px;
+
+    padding: 10px 20px;
+}
+
+
+/* Social */
+
+.social-icons {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 35px;
+
+    margin-bottom: 25px;
+}
+
+.social-icons span {
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+
+    background-color: #eeeeee;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #555;
+
+    font-size: 18px;
+
+    font-weight: 600;
+}
+
+
+/* Copyright */
+
+.copyright {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 14px;
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 1000px) {
+
+    .app-section {
+        gap: 50px;
+    }
+
+    .property-tabs {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .property-links {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .app-section {
+        flex-direction: column;
+
+        gap: 30px;
+
+        padding: 40px 5%;
+    }
+
+    .app-image,
+    .app-content {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .app-content h2 {
+        font-size: 25px;
+    }
+
+    .app-content p {
+        margin-bottom: 30px;
+    }
+
+    .app-buttons {
+        justify-content: center;
+    }
+
+    .property-tabs {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .property-links {
+        grid-template-columns: 1fr;
+    }
+
+    .service-columns {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .property-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .property-action:first-child {
+        border-right: none;
+
+        border-bottom: 1px solid #ccc;
+    }
+
+    .footer-links {
+        gap: 20px;
+    }
+
+}
