@@ -469,10 +469,13 @@ const getPropertyById = async (req, res) => {
             });
         }
 
-        const property = await Property.findOne({
-            _id: id,
-            status: "active"
-        }).populate("owner", "name email");
+        // const property = await Property.findOne({
+        //     _id: id,
+        //     status: "active"
+        // }).populate("owner", "name email");
+
+        const property = await Property.findById(id)
+        .populate("owner", "name email");
 
         if (!property) {
             return res.status(404).json({
