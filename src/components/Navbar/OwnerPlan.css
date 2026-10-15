@@ -1,0 +1,675 @@
+
+/* ===================================
+   OWNER PLANS PAGE
+=================================== */
+
+.owner-plans-page {
+    width: 100%;
+    background: #ffffff;
+    color: #31465a;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.owner-plans-page * {
+    box-sizing: border-box;
+}
+
+/* ===================================
+   INTRODUCTION
+=================================== */
+
+.owner-plans-intro {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 48px 20px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.owner-intro-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.owner-intro-content h1 {
+    margin: 0 0 12px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #344e66;
+}
+
+.owner-intro-content h1 strong {
+    font-weight: 700;
+}
+
+.owner-trust-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 16px;
+    color: #344e66;
+}
+
+.owner-stars {
+    color: #ffc83d;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.owner-tenant-link {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    border: 1px solid #008b80;
+    border-radius: 9px;
+    background: #f4fffc;
+    color: #008b80;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.owner-tenant-link:hover {
+    background: #e3f7f2;
+}
+
+/* ===================================
+   PLAN CARDS
+=================================== */
+
+.owner-pricing-section {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 15px 20px 0;
+}
+
+.owner-plan-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 14px;
+}
+
+.owner-plan-card {
+    position: relative;
+    min-width: 0;
+    min-height: 218px;
+    margin-top: 12px;
+    padding: 24px 20px 18px;
+    border: 1px solid #d7e9e6;
+    border-radius: 21px;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(24, 64, 72, 0.12);
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.owner-plan-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 18px rgba(24, 64, 72, 0.13);
+}
+
+.owner-plan-selected {
+    border-color: #a6d8d1;
+}
+
+.owner-plan-popular {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(220, 248, 244, 0.98),
+            rgba(231, 250, 247, 0.95)
+        );
+    border: 2px solid #d4e9e5;
+    box-shadow: 0 3px 10px rgba(24, 64, 72, 0.14);
+}
+
+.owner-plan-badge {
+    position: absolute;
+    top: -13px;
+    right: 20px;
+    z-index: 2;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30px;
+    padding: 5px 10px;
+    border: 1px solid #eadfa9;
+    border-radius: 8px;
+    background: #faefbf;
+    color: #827126;
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.owner-plan-card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.owner-plan-card h2 {
+    margin: 3px 0 18px;
+    color: #344e66;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.owner-price-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.owner-price-row > strong {
+    color: #242d35;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.owner-gst-button {
+    padding: 2px 0;
+    border: 0;
+    background: transparent;
+    color: #777777;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.owner-gst-button:hover {
+    color: #008b80;
+}
+
+.owner-gst-details {
+    margin: 2px 0 10px;
+    padding: 9px;
+    border: 1px solid #e1e9e7;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #555555;
+    font-size: 11px;
+}
+
+.owner-gst-details p {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin: 0;
+    padding: 5px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.owner-gst-details p:last-child {
+    border-bottom: 0;
+}
+
+.owner-gst-details strong {
+    color: #333333;
+    white-space: nowrap;
+}
+
+.owner-plan-description {
+    margin: 0 0 12px;
+    color: #687783;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.owner-subscribe-button {
+    width: 100%;
+    min-height: 44px;
+    margin-top: auto;
+    padding: 10px 12px;
+    border: 1px solid #c9e3df;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #263746;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+        color 0.2s ease,
+        background 0.2s ease;
+}
+
+.owner-subscribe-button:hover {
+    background: #f0fbf8;
+}
+
+.owner-plan-popular .owner-subscribe-button {
+    border-color: #007f73;
+    background: #007f73;
+    color: #ffffff;
+}
+
+.owner-plan-popular .owner-subscribe-button:hover {
+    background: #006c62;
+}
+
+/* ===================================
+   BENEFITS PANEL
+=================================== */
+
+.owner-benefits-panel {
+    position: relative;
+    z-index: 1;
+    margin-top: 60px;
+    padding: 30px 42px 22px;
+    border-radius: 22px;
+    background: #ffffff;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.11);
+}
+
+.owner-benefits-pointer {
+    position: absolute;
+    top: -32px;
+    left: 35%;
+    width: 0;
+    height: 0;
+    border-right: 31px solid transparent;
+    border-bottom: 43px solid #ffffff;
+    border-left: 31px solid transparent;
+}
+
+.owner-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 36px;
+    row-gap: 20px;
+}
+
+.owner-benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    min-width: 0;
+}
+
+.owner-benefit-icon {
+    flex: 0 0 29px;
+    width: 29px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #526c80;
+    font-size: 27px;
+    line-height: 1;
+}
+
+.owner-benefit-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #344e66;
+    font-size: 15px;
+    line-height: 1.55;
+}
+
+.owner-benefit-text strong {
+    font-weight: 500;
+}
+
+.owner-benefit-text span {
+    font-weight: 400;
+}
+
+.owner-benefit-muted .owner-benefit-icon,
+.owner-benefit-muted .owner-benefit-text {
+    color: #b6b6b6;
+}
+
+.owner-benefits-footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    padding-top: 5px;
+}
+
+.owner-benefits-footer p {
+    margin: 0;
+    color: #333333;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.owner-benefits-footer p a {
+    margin-left: 8px;
+    color: #ff4057;
+    text-decoration: none;
+}
+
+.owner-terms-link {
+    position: absolute;
+    right: 0;
+    color: #8a9aaa;
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+/* ===================================
+   TESTIMONIAL
+=================================== */
+
+.owner-testimonial-section {
+    padding: 95px 20px 60px;
+}
+
+.owner-testimonial-card {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    min-height: 245px;
+    margin: 0 auto;
+    padding: 48px 38px 30px;
+    border: 1px solid #e6e6e6;
+    border-radius: 24px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.owner-testimonial-avatar {
+    position: absolute;
+    top: -42px;
+    left: 50%;
+    width: 78px;
+    height: 78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+    border: 5px solid #f2f2f2;
+    border-radius: 50%;
+    background: #e0f5f0;
+    color: #007f73;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.owner-testimonial-card blockquote {
+    margin: 0;
+    color: #344e66;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.65;
+}
+
+.owner-testimonial-tag {
+    margin: 15px 0 0;
+    color: #008b80;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.owner-testimonial-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 32px;
+}
+
+.owner-testimonial-controls button {
+    width: 15px;
+    height: 5px;
+    padding: 0;
+    border: 0;
+    border-radius: 5px;
+    background: #dddddd;
+    cursor: pointer;
+}
+
+.owner-testimonial-controls button.active {
+    width: 19px;
+    background: #008b80;
+}
+
+/* ===================================
+   FAQ SECTION
+=================================== */
+
+.owner-faq-section {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 35px 20px 70px;
+    border-top: 1px solid #dddddd;
+}
+
+.owner-faq-section > h2 {
+    margin: 10px 0 20px;
+    color: #344e66;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.owner-faq-list {
+    width: 100%;
+}
+
+.owner-faq-item {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.owner-faq-item > button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    border: 0;
+    background: #ffffff;
+    color: #333333;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+}
+
+.owner-faq-item > button:hover {
+    color: #008b80;
+}
+
+.owner-faq-symbol {
+    flex: 0 0 auto;
+    color: #111111;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.owner-faq-item > p {
+    margin: 0;
+    padding: 0 40px 20px 0;
+    color: #697783;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* ===================================
+   LAPTOP / SMALL DESKTOP
+=================================== */
+
+@media (max-width: 1100px) {
+    .owner-plans-intro {
+        gap: 20px;
+        padding-top: 35px;
+    }
+
+    .owner-intro-content h1 {
+        font-size: 23px;
+    }
+
+    .owner-tenant-link {
+        font-size: 12px;
+        padding: 11px 12px;
+    }
+
+    .owner-plan-grid {
+        gap: 10px;
+    }
+
+    .owner-plan-card {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .owner-plan-card h2 {
+        font-size: 17px;
+    }
+
+    .owner-plan-badge {
+        right: 8px;
+        font-size: 9px;
+        padding: 4px 6px;
+    }
+
+    .owner-benefits-panel {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .owner-benefits-grid {
+        column-gap: 20px;
+    }
+}
+
+/* ===================================
+   TABLET
+=================================== */
+
+@media (max-width: 800px) {
+    .owner-plans-intro {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .owner-tenant-link {
+        align-self: flex-start;
+    }
+
+    .owner-plan-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 25px;
+    }
+
+    .owner-benefits-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .owner-benefits-footer {
+        flex-direction: column;
+    }
+
+    .owner-terms-link {
+        position: static;
+    }
+}
+
+/* ===================================
+   MOBILE
+=================================== */
+
+@media (max-width: 520px) {
+    .owner-plans-intro {
+        padding: 30px 16px 20px;
+    }
+
+    .owner-intro-content h1 {
+        font-size: 22px;
+    }
+
+    .owner-trust-row {
+        gap: 8px;
+        font-size: 13px;
+    }
+
+    .owner-stars {
+        font-size: 20px;
+    }
+
+    .owner-pricing-section {
+        padding: 12px 16px 0;
+    }
+
+    .owner-plan-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .owner-plan-card {
+        min-height: 200px;
+        padding: 25px 18px 18px;
+    }
+
+    .owner-plan-card h2 {
+        font-size: 19px;
+    }
+
+    .owner-plan-badge {
+        right: 15px;
+        font-size: 10px;
+    }
+
+    .owner-benefits-panel {
+        margin-top: 45px;
+        padding: 25px 18px;
+        border-radius: 16px;
+    }
+
+    .owner-benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .owner-benefit-text {
+        font-size: 14px;
+    }
+
+    .owner-benefits-footer p {
+        line-height: 1.8;
+    }
+
+    .owner-testimonial-section {
+        padding: 85px 16px 45px;
+    }
+
+    .owner-testimonial-card {
+        padding: 45px 20px 25px;
+    }
+
+    .owner-testimonial-card blockquote {
+        font-size: 16px;
+    }
+
+    .owner-faq-section {
+        padding: 30px 16px 50px;
+    }
+
+    .owner-faq-section > h2 {
+        font-size: 23px;
+    }
+}

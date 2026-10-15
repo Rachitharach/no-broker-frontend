@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -15,4 +19,8 @@ body {
     margin: 0;
     background-color: white;
     font-family: Arial, sans-serif;
+}
+
+img {
+    max-width: 100%;
 }

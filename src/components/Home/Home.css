@@ -1,164 +1,307 @@
+
+/* MAIN HOME SECTION */
 .home {
-    width: 100%;
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 40px;
-    background-color: white;
+    @apply flex w-full flex-col items-center bg-white pb-[25px] pt-[55px];
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+
 }
 
+/* HEADING */
 .home h1 {
-    font-size: 30px;
+    @apply mb-[22px] text-center   text-[#777];
+    font-family: Source Sans Pro,sans-serif;
+    font-size: 28px;
     font-weight: 400;
-    color: #666;
-    margin-bottom: 25px;
 }
 
+/* GUARANTEE BANNER */
 
-/* Guarantee */
-
-.guarantee {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-
-    padding: 18px 25px;
-
-    background-color: #fff3df;
-
-    color: #555;
-
-    margin-bottom: 35px;
-}
-
-
-/* Search box */
-
-.property-search {
-    width: 50%;
-    max-width: 935px;
-
-    border: 1px solid #ddd;
-}
-
-
-/* Tabs */
-
-.property-tabs {
-    display: flex;
-    height: 50px;
-}
-
-.property-tabs button {
-    flex: 1;
-
-    background-color: white;
-    border: none;
-    border-bottom: 1px solid #ddd;
-
-    font-size: 16px;
-    color: #888;
-
-    cursor: pointer;
-}
-
-.property-tabs .active {
-    color: #ff385c;
-    border-bottom: 3px solid #ff385c;
-}
-
-
-/* Search row */
-
-.search-row {
-    display: flex;
-    height: 55px;
-}
-
-.search-row select {
-    width: 170px;
-
-    border: none;
-    border-right: 1px solid #ddd;
-
-    padding: 0 12px;
-    font-size: 15px;
-}
-
-.search-row input {
-    flex: 1;
-
-    border: none;
-    outline: none;
-
-    padding: 0 15px;
-
-    font-size: 15px;
-}
-
-.search-btn {
-    width: 180px;
-
-    border: none;
-
-    background-color: #ff385c;
-    color: white;
-
-    font-size: 16px;
-
-    cursor: pointer;
-}
-
-
-/* Filters */
-
-.filter-row {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-
-    padding: 10px 15px;
-
-    border-top: 1px solid #ddd;
-}
-
-.filter-row select {
-    padding: 10px;
-
-    border: 1px solid #ddd;
-}
-
-.filter-row label {
-    font-size: 14px;
+/* 
+.guarantee span {
     white-space: nowrap;
 }
 
+.guarantee-divider {
+    @apply text-[#999];
+} */
 
-/* Owner */
 
-.owner-section {
-    margin-top: 55px;
 
-    text-align: center;
+/* Guarantee banner */
+.guarantee {
+    @apply flex items-center justify-center gap-[10px] ;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5px;
+    color: #555;
+    line-height: 1.4;
+    background-color: rgb(249, 243, 193);
+}
+.guarantee img{
+    height: 32px;
+    width: 32px;
+    
 }
 
-.owner-section p {
+.guarantee-icon {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.guarantee-text {
+    white-space: nowrap;
+}
+
+.guarantee-divider {
+    color: #ccc;
+    font-size: 18px;
+    margin: 0 3px;
+    line-height: 1;
+}
+
+
+/* SEARCH CONTAINER */
+.property-search {
+    @apply w-full bg-white;
+    max-width: 932px;
+    box-sizing: border-box;
+    border: none;
+}
+
+/* BUY / RENT / COMMERCIAL TABS */
+.home .property-tabs {
+    @apply mx-auto flex h-[50px];
+    width: 50%;
+    min-width: 360px;
+}
+
+.home .property-tabs button {
+    @apply flex-1 cursor-pointer border-0 border-b-[3px] border-transparent bg-white text-base text-[#aaa];
+    border-right: 1px solid #eee;
+    font-family: inherit;
+    font-weight: 400;
+}
+
+.home .property-tabs button:first-child {
+    border-left: 1px solid #eee;
+}
+
+.home .property-tabs button.active {
+    @apply border-0 border-b-[4px] border-solid border-[#ff385c] bg-white font-semibold text-[#ff385c];
+    border-radius: 0;
+}
+
+/* LOCATION + SEARCH ROW */
+.search-row {
+    @apply flex h-[50px] w-full border border-[#ddd];
+    box-sizing: border-box;
+}
+
+.search-row select {
+    @apply border-0 border-r border-[#ddd] bg-white px-3 text-[15px] text-[#555];
+    font-family: inherit;
+}
+
+.search-row .city-select :hover {
+    flex: 0 0 169px;
+    background: #f3f1f1;
+
+}
+
+.search-row input {
+    @apply min-w-0 flex-1 border-0 bg-white px-[15px] text-[10px] text-[#555] outline-none;
+    font-family: Source Sans Pro,sans-serif;
     font-size: 16px;
-    color: #555;
-    margin-bottom: 10px;
+}
+
+.search-row input::placeholder {
+    @apply text-[#dddbdb];
+}
+
+.search-btn {
+    @apply flex cursor-pointer items-center justify-center gap-2 border-0 bg-[#ff385c] text-base font-semibold text-white;
+    flex: 0 0 187px;
+    font-family: inherit;
+}
+
+.search-btn:hover {
+    @apply bg-[#f32d52];
+}
+
+.search-btn span {
+    font-size: 24px;
+    line-height: 1;
+}
+
+/* FILTER ROW */
+.filter-row {
+    @apply flex min-h-[55px] items-center gap-3 border-x border-b border-[#ddd] bg-white px-[17px] py-[7px];
+    box-sizing: border-box;
+}
+
+.filter-row label {
+    @apply flex cursor-pointer items-center gap-1.5 whitespace-nowrap text-sm text-[#555];
+    font-family: inherit;
+}
+
+.filter-row input[type="radio"],
+.filter-row input[type="checkbox"] {
+    @apply h-4 w-4 cursor-pointer;
+    accent-color: #009f91;
+    flex-shrink: 0;
+}
+
+.filter-row select {
+    @apply h-[42px] cursor-pointer border border-[#e0e0e0] bg-white px-2 text-xs text-[#888];
+    font-family: inherit;
+    min-width: 150px;
+    max-width: 190px;
+}
+
+/* PROPERTY OWNER SECTION */
+.owner-section {
+    @apply mt-[45px] mb-[20px] flex flex-col items-center;
+}
+
+.owner-title {
+    @apply mb-[14px] flex items-center justify-center gap-3;
+}
+
+.owner-title p {
+    @apply m-0 whitespace-nowrap text-base text-[#555];
+}
+
+.owner-title span {
+    @apply block w-[65px] border-t border-[#d5d5d5];
 }
 
 .owner-section button {
-    padding: 14px 30px;
-
-    border: none;
-
-    background-color: #009587;
-    color: white;
-
-    font-size: 15px;
-
-    cursor: pointer;
+    @apply cursor-pointer rounded-[2px] border-none bg-[#009688] px-[29px] py-[10px] text-[15px] text-white;
+    font-family: inherit;
 }
+
+.owner-section button:hover {
+    @apply bg-[#008577];
+}
+
+/* TABLET */
+@media (max-width: 1000px) {
+    .home {
+        @apply px-5 pt-[55px];
+    }
+
+    .home h1 {
+        @apply text-[28px];
+    }
+
+    .property-search {
+        @apply w-full;
+    }
+
+    .home .property-tabs {
+        width: 50%;
+        min-width: 320px;
+    }
+
+    .filter-row {
+        @apply flex-wrap gap-3;
+    }
+
+    .search-row .city-select {
+        flex-basis: 140px;
+    }
+
+    .search-btn {
+        flex-basis: 140px;
+    }
+
+    .filter-row select {
+        min-width: 120px;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .home {
+        @apply px-3 pt-8;
+    }
+
+    .home h1 {
+        @apply mb-5 text-[23px] leading-8;
+    }
+
+    .guarantee {
+        @apply mb-6 max-w-full flex-wrap gap-2 px-3 py-3 text-xs;
+    }
+
+    .home .property-tabs {
+        @apply h-[45px] w-full;
+        min-width: 0;
+    }
+
+    .home .property-tabs button {
+        @apply text-sm;
+    }
+
+    .search-row {
+        @apply h-auto flex-wrap;
+    }
+
+    .search-row .city-select {
+        flex: 0 0 100%;
+        height: 45px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .search-row input {
+        flex: 1 1 100%;
+        height: 45px;
+        border-bottom: 1px solid #ddd;
+        box-sizing: border-box;
+    }
+
+    .search-btn {
+        flex: 1 1 100%;
+        height: 45px;
+    }
+
+    .filter-row {
+        @apply gap-3 px-3 py-3;
+    }
+
+    .filter-row label {
+        @apply whitespace-normal text-xs;
+    }
+
+    .filter-row select {
+        @apply h-[38px] text-xs;
+        min-width: 120px;
+        max-width: 100%;
+        flex: 1 1 120px;
+    }
+
+    .owner-section {
+        @apply mt-9;
+    }
+
+    .owner-title {
+        @apply gap-2;
+    }
+
+    .owner-title span {
+        width: 25px;
+    }
+
+    .owner-title p {
+        @apply text-sm;
+    }
+
+    .owner-section button {
+        @apply px-5 py-3 text-sm;
+    }
+}
+

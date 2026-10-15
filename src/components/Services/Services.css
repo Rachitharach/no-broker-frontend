@@ -1,1385 +1,1410 @@
-/* ==================================================
-   SERVICES SECTION
-================================================== */
-
-.services-section {
-    width: 100%;
-    background-color: white;
-}
-
-
-/* ==================================================
+/* =========================
    LOAN BANNER
-================================================== */
+========================= */
 
 .loan-banner {
-    width: 100%;
-    height: 60px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: #3d5577;
-    color: white;
+    @apply mb-3 flex min-h-[60px] w-full items-center justify-center bg-[#3d5577] text-white;
 }
 
 .loan-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 15px;
-
-    font-size: 14px;
+    @apply flex items-center justify-center gap-3 text-sm;
 }
 
 .loan-content p {
-    margin: 0;
+    @apply m-0;
 }
 
 .loan-content strong {
-    font-weight: 700;
+    @apply font-bold;
 }
 
 .loan-icon {
-    width: 38px;
-    height: 38px;
-
-    object-fit: contain;
+    @apply h-[38px] w-[38px] object-contain;
 }
 
 .loan-content button {
-    padding: 8px 14px;
-
-    border: none;
-    border-radius: 4px;
-
-    background-color: white;
-    color: #444;
-
-    font-size: 13px;
-
-    cursor: pointer;
+    @apply cursor-pointer rounded border-0 bg-white px-[10px] py-2 text-[13px] text-[#444];
 }
 
 .loan-content button:hover {
-    background-color: #f5f5f5;
+    @apply bg-[#f5f5f5];
 }
 
-
-/* ==================================================
-   SERVICES
-================================================== */
+/* =========================
+   SERVICE CARDS
+========================= */
 
 .service-list {
-    width: 100%;
-
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-
-    padding: 28px 5% 42px;
-
-    background-color: white;
+    @apply grid w-full grid-cols-6 bg-white px-[5%] pb-[42px] pt-7;
 }
 
 .service-item {
-    position: relative;
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-
-    text-align: center;
-
-    min-height: 125px;
+    @apply relative flex min-h-[125px] flex-col items-center text-center;
 }
 
 .service-item img {
-    width: 60px;
-    height: 60px;
-
-    object-fit: contain;
-
-    margin-bottom: 12px;
+    @apply mb-3 h-[60px] w-[60px] object-contain;
 }
 
 .service-item p {
-    margin: 0;
-
-    color: #333;
-
-    font-size: 15px;
+    @apply m-0 text-[15px] text-[#333];
 }
-
-
-/* ==================================================
-   SERVICE BADGE
-================================================== */
 
 .service-badge {
-    position: absolute;
-
-    top: -5px;
-
-    padding: 4px 10px;
-
-    background-color: #fff0dc;
-
-    border-radius: 15px;
-
-    color: #555;
-
-    font-size: 11px;
-
-    white-space: nowrap;
+    @apply absolute top-[-24px] whitespace-nowrap rounded-[15px] bg-[#fff0dc] px-[10px] py-1 text-[11px] text-[#555];
 }
 
-
-/* ==================================================
-   COMMON SECTION TITLE
-================================================== */
+/* =========================
+   SHARED SECTION TITLE
+========================= */
 
 .section-title {
-    width: 100%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-bottom: 48px;
+    @apply mb-12 flex w-full items-center justify-center;
 }
 
 .section-title span {
-    height: 1px;
-
-    background-color: #d5d5d5;
-
-    flex: 1;
-
-    position: relative;
+    @apply relative h-px flex-1 bg-[#d5d5d5];
 }
 
 .section-title span:first-child {
-    margin-right: 20px;
+    @apply mr-5;
 }
 
 .section-title span:last-child {
-    margin-left: 20px;
+    @apply ml-5;
 }
 
-
-/* Left circle */
-
-.section-title span:first-child::after {
-    content: "";
-
-    position: absolute;
-
-    width: 20px;
-    height: 20px;
-
-    border: 1px solid #ff385c;
-
-    border-radius: 50%;
-
-    background-color: white;
-
-    right: -10px;
-    top: 50%;
-
-    transform: translateY(-50%);
-}
-
-
-/* Right circle */
-
+.section-title span:first-child::after,
 .section-title span:last-child::before {
     content: "";
-
-    position: absolute;
-
-    width: 20px;
-    height: 20px;
-
-    border: 1px solid #ff385c;
-
-    border-radius: 50%;
-
-    background-color: white;
-
-    left: -10px;
-    top: 50%;
-
-    transform: translateY(-50%);
+    @apply absolute top-1/2 h-5 w-5 -translate-y-1/2 rounded-full border border-[#ff385c] bg-white;
 }
 
+.section-title span:first-child::after {
+    right: -10px;
+}
 
-/* Heading */
+.section-title span:last-child::before {
+    left: -10px;
+}
 
 .section-title h2 {
-    margin: 0 25px;
-
-    color: #666;
-
-    font-size: 28px;
-
-    font-weight: 400;
-
-    white-space: nowrap;
+    @apply mx-[25px] whitespace-nowrap text-[28px] font-normal text-[#666];
 }
 
-
-/* ==================================================
+/* =========================
    WHY USE NOBROKER
-================================================== */
+========================= */
 
 .why-nobroker {
-    width: 100%;
-
-    padding: 0 3% 55px;
-
-    background-color: white;
-
-    text-align: center;
+    @apply w-full bg-white px-[3%] pb-[55px] text-center;
 }
 
 .why-list {
-    width: 100%;
-
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 40px;
+    @apply grid w-full grid-cols-4 gap-10;
 }
 
 .why-item {
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    text-align: center;
+    @apply flex flex-col items-center text-center;
 }
 
 .why-item img {
-    width: 80px;
-    height: 80px;
-
-    object-fit: contain;
-
-    margin-bottom: 15px;
+    @apply mb-[15px] h-20 w-20 object-contain;
 }
 
 .why-item h3 {
-    margin: 0 0 8px;
-
-    color: #333;
-
-    font-size: 17px;
-
-    font-weight: 400;
+    @apply mb-2 mt-0 text-[17px] font-normal text-[#333];
 }
 
 .why-item p {
-    max-width: 250px;
-
-    margin: 0;
-
-    color: #555;
-
-    font-size: 14px;
-
-    line-height: 1.6;
+    @apply m-0 max-w-[250px] text-sm leading-[1.6] text-[#555];
 }
 
-
-/* ==================================================
+/* =========================
    BUSINESS ASSIST
-================================================== */
+========================= */
 
 .business-assist {
-    width: 100%;
-
-    background-color: #f7f7f7;
-
-    padding: 30px 7% 45px;
+    @apply w-full bg-[#f7f7f7] px-[7%] pb-[45px] pt-[30px];
 }
 
 .business-content {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 100px;
-
-    min-height: 260px;
+    @apply flex min-h-[260px] items-center justify-center gap-[60px];
 }
 
 .business-image {
-    width: 45%;
-
-    display: flex;
-
-    justify-content: center;
+    @apply flex w-[45%] justify-center;
 }
 
 .business-image img {
-    width: 300px;
-    height: 230px;
-
-    object-fit: contain;
+    @apply h-[230px] w-[300px] max-w-full object-contain;
 }
 
 .business-info {
-    width: 40%;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: flex-start;
+    @apply flex w-[40%] flex-col items-start;
 }
 
 .business-info > p {
-    margin: 0 0 35px;
-
-    color: #666;
-
-    font-size: 18px;
+    @apply mb-[35px] mt-0 text-lg text-[#666];
 }
 
 .business-info button {
-    padding: 14px 28px;
-
-    border: none;
-
-    background-color: #ff385c;
-
-    color: white;
-
-    font-size: 14px;
-
-    cursor: pointer;
+    @apply cursor-pointer border-0 bg-[#ff385c] px-7 py-[14px] text-sm text-white;
 }
 
 .business-info button:hover {
-    background-color: #e92f50;
+    @apply bg-[#e92f50];
 }
 
 .builder-contact {
-    width: 100%;
-
-    margin-top: 0;
-
-    padding-top: 8px;
-
-    border-top: 1px solid #ddd;
+    @apply mt-5 w-full border-t border-[#ddd] pt-[10px];
 }
 
 .builder-contact p {
-    margin: 0;
-
-    color: #555;
-
-    font-size: 14px;
+    @apply m-0 text-sm text-[#555];
 }
 
-
-/* ==================================================
-   WE MAKE A DIFFERENCE
-================================================== */
+/* =========================
+   DIFFERENCE STATISTICS
+========================= */
 
 .difference-section {
-    width: 100%;
-
-    background-color: white;
-
-    padding: 30px 5% 55px;
+    @apply w-full bg-white px-[5%] pb-[55px] pt-[30px];
 }
 
 .difference-list {
-    width: 100%;
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 40px;
-
-    text-align: center;
+    @apply grid w-full grid-cols-3 gap-10 text-center;
 }
 
 .difference-item {
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
+    @apply flex flex-col items-center;
 }
 
 .difference-circle {
-    width: 185px;
-    height: 185px;
-
-    border: 2px solid #ff385c;
-
-    border-radius: 50%;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    margin-bottom: 25px;
+    @apply mb-[25px] flex h-[185px] w-[185px] items-center justify-center rounded-full border-2 border-[#ff385c];
 }
 
 .difference-circle span {
-    color: #ff385c;
-
-    font-size: 36px;
-
-    font-weight: 300;
+    @apply text-[30px] font-light text-[#ff385c];
 }
 
 .difference-item p {
-    margin: 0;
-
-    color: #333;
-
-    font-size: 20px;
+    @apply m-0 text-xl text-[#333];
 }
 
-
-/* ==================================================
-   OUR CUSTOMERS
-================================================== */
+/* =========================
+   CUSTOMER TESTIMONIALS
+========================= */
 
 .customers-section {
-    width: 100%;
-
-    background-color: #344f63;
-
-    padding: 50px 5% 70px;
-
-    text-align: center;
+    @apply w-full bg-[#344f63] px-[5%] pb-[70px] pt-[50px] text-center;
 }
 
-.customers-section h2 {
-    margin: 0 0 40px;
-
-    color: white;
-
-    font-size: 30px;
-
-    font-weight: 400;
+.customers-section > h2 {
+    @apply mb-10 mt-0 text-[30px] font-normal text-white;
 }
-
-
-/* Video */
-
-.video-container {
-    width: 620px;
-
-    max-width: 100%;
-
-    height: 350px;
-
-    margin: 0 auto;
-
-    background-color: #111;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-}
-
-.video-placeholder {
-    width: 100%;
-    height: 100%;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    justify-content: center;
-
-    color: white;
-}
-
-.play-button {
-    width: 60px;
-    height: 60px;
-
-    border-radius: 50%;
-
-    background-color: #ff385c;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    color: white;
-
-    font-size: 24px;
-
-    margin-bottom: 15px;
-}
-
-.video-placeholder p {
-    margin: 0;
-
-    font-size: 18px;
-}
-
-
-/* ==================================================
-   RESPONSIVE
-================================================== */
-
-@media (max-width: 900px) {
-
-    .service-list {
-        grid-template-columns: repeat(3, 1fr);
-
-        row-gap: 30px;
-    }
-
-    .why-list {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .business-content {
-        gap: 40px;
-    }
-
-    .business-image,
-    .business-info {
-        width: 50%;
-    }
-
-    .difference-list {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-    }
-
-    .difference-circle {
-        width: 40px;
-        height: 40px;
-    }
-
-    .difference-circle span {
-        font-size: 18px;
-    }
-
-    .difference-item p {
-        font-size: 10px;
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    .loan-banner {
-        height: auto;
-
-        padding: 12px;
-    }
-
-    .loan-content {
-        flex-wrap: wrap;
-
-        justify-content: center;
-
-        text-align: center;
-    }
-
-    .service-list {
-        grid-template-columns: repeat(2, 1fr);
-
-        padding: 25px 3%;
-    }
-
-    .why-list {
-        grid-template-columns: 1fr;
-    }
-
-    .section-title h2 {
-        font-size: 22px;
-        margin: 0 15px;
-    }
-
-    .business-content {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .business-image {
-        height: 5px;
-        height: 5px;
-    }
-    .business-info {
-        width: 100%;
-
-    }
-
-    .business-info {
-        align-items: center;
-        text-align: center;
-    }
-
-    .difference-list {
-        grid-template-columns: 1fr;
-    }
-
-    .customers-section h2 {
-        font-size: 18px;
-    }
-
-    .video-container {
-        height: 250px;
-    }
-
-}
-
-/* ==================================================
-   OUR CUSTOMERS LOVES US
-================================================== */
-
-.customers-section {
-    width: 100%;
-
-    background-color: #344f63;
-
-    padding: 45px 5% 45px;
-
-    text-align: center;
-
-    color: white;
-}
-
-
-/* Title */
-
-.customers-section h2 {
-    margin: 0 0 40px;
-
-    color: white;
-
-    font-size: 30px;
-
-    font-weight: 400;
-}
-
-
-/* ==================================================
-   VIDEO
-================================================== */
 
 .customer-video {
-    width: 650px;
-    max-width: 100%;
-    height: 330px;
-    margin: 0 auto 45px;
-    background-color: black;
+    @apply mx-auto mb-[45px] h-[330px] w-[650px] max-w-full bg-black;
 }
 
 .customer-video iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
+    @apply h-full w-full border-0;
 }
-
-
-/* ==================================================
-   TESTIMONIALS
-================================================== */
 
 .testimonial-list {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    text-align: left;
+    @apply grid w-full grid-cols-3 gap-[30px] text-left;
 }
-
-
-/* Testimonial card */
 
 .testimonial-card {
-    min-height: 200px;
-    padding: 18px 20px;
-    background-color: #f8f8f8;
-
-    color: #333;
+    @apply min-h-[200px] bg-[#f8f8f8] px-5 py-[18px] text-[#333];
 }
-
-
-/* User */
 
 .testimonial-user {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 25px;
+    @apply flex items-center gap-3;
 }
-
-
-/* User image */
 
 .user-image {
-    width: 38px;
-
-    height: 38px;
-
-    border-radius: 50%;
-
-    background-color: #ddd;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 18px;
+    @apply flex h-[45px] w-[45px] shrink-0 items-center justify-center rounded-full bg-[#eee];
 }
 
-
-/* User name */
-
-.testimonial-user h3 {
-    margin: 0 0 4px;
-    color: #222;
-    font-size: 11px;
-    font-weight: 400;
+.testimonial-card h3 {
+    @apply mb-1 text-base font-semibold;
 }
-
-
-/* Stars */
-
-.stars {
-    color: #008c99;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
-
-
-/* Testimonial heading */
 
 .testimonial-card h4 {
-    margin: 0 0 8px;
-    color: #222;
-    font-size: 17px;
-    font-weight: 500;
+    @apply mb-[10px] mt-[18px] text-[15px] font-semibold;
 }
-
-
-/* Testimonial text */
 
 .testimonial-card p {
-    margin: 0;
-    color: #444;
-    font-size: 12px;
-    line-height: 1.55;
+    @apply m-0 text-[13px] leading-[1.6];
 }
 
-
-/* ==================================================
-   MORE TESTIMONIALS
-================================================== */
+.stars {
+    @apply text-[#ff385c];
+}
 
 .more-testimonials {
-    display: inline-block;
-    margin-top: 45px;
-    color: white;
-    font-size: 12px;
-    text-decoration: underline;
+    @apply mt-[30px] inline-block cursor-pointer text-white underline;
 }
 
-.more-testimonials:hover {
-    color: #ddd;
-}
-
-
-/* ==================================================
-   RESPONSIVE
-================================================== */
-
-@media (max-width: 900px) {
-
-    .testimonial-list {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .testimonial-card {
-        max-width: 600px;
-        margin: 0 auto;
-        width: 100%;
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    .customers-section {
-        padding: 35px 5%;
-    }
-
-    .customers-section h2 {
-        font-size: 24px;
-    }
-
-    .customer-video {
-        height: 240px;
-    }
-
-}
-
-/* ==================================================
-   FIND A NEW HOME ON THE GO
-================================================== */
+/* =========================
+   MOBILE APP
+========================= */
 
 .app-section {
-    width: 100%;
-
-    min-height: 480px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 150px;
-
-    padding: 60px 8%;
-
-    background-color: white;
+    @apply flex w-full items-center justify-center gap-28 bg-white px-[5%] py-[10px];
 }
 
 .app-image {
-    width: 40%;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
+    @apply flex items-center justify-center w-96;
 }
 
 .phone-placeholder {
-    width: 300px;
-
-    height: 360px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 180px;
+    @apply flex h-[400px] w-[300px] items-center justify-center rounded-[25px]  text-[40px]; 
+}
+.phone-placeholder img{
+    @apply h-[350px] w-[1000px]
 }
 
 .app-content {
-    width: 45%;
+    @apply flex flex-col items-start;
 }
 
 .app-content h2 {
-    margin: 0 0 45px;
-    color: #090909;
-    font-size: 32px;
-    font-weight: 400;
+    @apply mb-[15px] text-[28px] text-[#f54848];
 }
 
 .app-content h3 {
-    margin: 0 0 8px;
-
-    color: #333;
-
-    font-size: 23px;
-
-    font-weight: 400;
+    @apply mb-[10px] text-xl;
 }
 
 .app-content p {
-    margin: 0 0 70px;
-
-    color: #777;
-
-    font-size: 18px;
+    @apply m-0 text-[#666];
 }
 
 .app-buttons {
-    display: flex;
-
-    gap: 25px;
+    @apply mt-14 flex flex-wrap gap-[15px];
 }
 
-.app-buttons button,
-.footer-apps button {
+.app-buttons button {
+    @apply cursor-pointer rounded bg-[#222] px-4 py-3 text-white;
+}
+
+/* ==================================================
+   8A. PROPERTY CATEGORIES
+   Independent section containing only the 8 categories
+================================================== */
+
+.property-category-section {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    padding: 0;
+}
+
+.property-category-tabs {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd;
+    background-color: #f5f5f5;
+}
+
+.property-category-tab {
+    flex: 1 1 auto;
+    padding: 18px 12px;
     border: none;
-
-    background-color: #050505;
-
-    color: white;
-
-    border-radius: 6px;
-
-    padding: 12px 22px;
-
-    font-size: 16px;
-
+    border-bottom: 3px solid transparent;
+    background-color: transparent;
+    color: #555;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
     cursor: pointer;
 }
 
+.property-category-tab:hover {
+    color: #ff385c;
+}
+
+.property-category-tab.active {
+    color: #ff385c;
+    border-bottom-color: #ff385c;
+}
 
 /* ==================================================
-   PROPERTY CATEGORY SECTION
+   8B. CITY-WISE PROPERTY LISTINGS
+   Independent section containing city headings and links
 ================================================== */
 
-.property-section {
+.property-listings-section {
     width: 100%;
-    background-color: white;
+    box-sizing: border-box;
+    padding: 35px 0;
+    background-color: #fff;
 }
-
-
-/* Category tabs */
-
-.property-tabs {
-    width: 100%;
-    display: grid;
-    height: auto;
-    grid-template-columns: repeat(8, 1fr);
-    background-color: #f8f8f8;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-}
-
-.property-tab {
-    min-height: 90px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    padding: 20px;
-
-    text-align: center;
-
-    color: #333;
-
-    font-size: 15px;
-
-    font-weight: 500;
-}
-
-.property-tab.active {
-    background-color: #eeeeee;
-    color: black;
-    border-bottom: 3px solid #faf8f8;
-}
-
-
-/* Property links */
 
 .property-links {
-    width: 100%;
-
     display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 30px;
+    box-sizing: border-box;
+}
 
-    grid-template-columns: repeat(5, 1fr);
-
-    gap: 45px;
-
-    padding: 35px 5% 60px;
-
-    background-color: white;
+.property-column {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
 }
 
 .property-column h3 {
-    margin: 0 0 18px;
-
+    margin: 12px 0;
     color: #333;
-
     font-size: 17px;
-
     font-weight: 500;
 }
 
 .property-column a {
-    display: block;
-
-    margin-bottom: 12px;
-
-    color: #333;
-
+    color: #666;
     font-size: 13px;
-
-    line-height: 1.4;
-
-    cursor: pointer;
+    line-height: 1.5;
+    text-decoration: none;
 }
 
 .property-column a:hover {
-    text-decoration: underline;
+    color: #ff385c;
 }
 
-
-/* ==================================================
+/* =========================
    NOBROKER SERVICES
-================================================== */
+========================= */
 
 .nobroker-services {
-    width: 100%;
-
-    padding: 35px 5% 55px;
-
-    background-color: white;
+    @apply w-full bg-white px-[5%] pb-[55px] pt-[35px];
 }
 
 .nobroker-services > h2 {
-    margin: 0 0 30px;
-
-    color: #333;
-
-    font-size: 22px;
-
-    font-weight: 600;
+    @apply mb-[30px] mt-0 text-[22px] font-semibold text-[#333];
 }
 
 .service-columns {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 80px;
+    @apply grid grid-cols-2 gap-[50px];
 }
 
 .service-links h3 {
-    margin: 0 0 18px;
-
-    color: #333;
-
-    font-size: 16px;
-
-    font-weight: 400;
+    @apply mb-[18px] mt-0 text-base font-normal text-[#333];
 }
 
 .service-tags {
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 14px;
+    @apply flex flex-wrap gap-3;
 }
 
 .service-tags span {
-    padding: 6px 9px;
-
-    background-color: #eeeeee;
-
-    border-radius: 4px;
-
-    color: #444;
-
-    font-size: 14px;
-
-    line-height: 1.2;
+    @apply rounded bg-[#eee] px-[9px] py-[6px] text-[13px] leading-[1.4] text-[#444];
 }
 
-
-/* ==================================================
+/* =========================
    FIND / LIST PROPERTY
-================================================== */
+========================= */
 
 .property-actions {
-    width: 100%;
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    background-color: #eeeeee;
-
-    border-top: 1px solid #ddd;
-
-    border-bottom: 1px solid #ddd;
+    @apply grid w-full grid-cols-2 border-y border-[#ddd] bg-[#eee];
 }
 
 .property-action {
-    min-height: 145px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-align: center;
-
-    padding: 25px;
+    @apply flex min-h-[145px] flex-col items-center justify-center p-[25px] text-center;
 }
 
 .property-action:first-child {
-    border-right: 1px solid #ccc;
+    @apply border-r border-[#ccc];
 }
 
 .property-action h3 {
-    margin: 0 0 6px;
-
-    color: #333;
-
-    font-size: 19px;
-
-    font-weight: 500;
+    @apply mb-[6px] mt-0 text-[19px] font-medium text-[#333];
 }
 
 .property-action p {
-    margin: 0 0 18px;
-
-    color: #555;
-
-    font-size: 14px;
+    @apply mb-[18px] mt-0 text-sm text-[#555];
 }
 
 .property-action button {
-    padding: 7px 28px;
-
-    border: none;
-
-    border-radius: 4px;
-
-    background-color: #444;
-
-    color: white;
-
-    font-size: 14px;
-
-    font-weight: 600;
-
-    cursor: pointer;
+    @apply cursor-pointer rounded border-0 bg-[#444] px-7 py-[7px] text-sm font-semibold text-white;
 }
 
-
-/* ==================================================
+/* =========================
    FOOTER
-================================================== */
+========================= */
 
 .footer {
-    width: 100%;
-
-    background-color: white;
-
-    padding: 40px 10% 20px;
-
-    text-align: center;
+    @apply w-full bg-white px-[5%] pb-5 pt-10 text-center;
 }
 
-
-/* Footer links */
-
 .footer-links {
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 45px;
-
-    flex-wrap: wrap;
+    @apply flex flex-wrap items-center justify-center gap-x-6 gap-y-5;
 }
 
 .footer-links a {
-    color: #333;
-
-    font-size: 16px;
-
-    cursor: pointer;
+    @apply cursor-pointer text-sm text-[#555] no-underline;
 }
 
 .footer-links a:hover {
-    text-decoration: underline;
+    @apply text-[#ff385c];
 }
-
-
-/* Divider */
 
 .footer-divider {
-    width: 100%;
-
-    height: 1px;
-
-    background-color: #ddd;
-
-    margin: 40px 0;
+    @apply my-[25px] border-t border-[#ddd];
 }
 
-
-/* Footer apps */
-
 .footer-apps {
-    display: flex;
-
-    justify-content: center;
-
-    gap: 40px;
-
-    margin-bottom: 25px;
+    @apply flex flex-wrap items-center justify-center gap-5;
 }
 
 .footer-apps button {
-    font-size: 12px;
-
-    padding: 10px 20px;
+    @apply cursor-pointer rounded bg-[#222] px-[14px] py-[10px] text-white;
 }
 
-
-/* Social */
-
 .social-icons {
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    gap: 35px;
-
-    margin-bottom: 25px;
+    @apply mt-5 flex items-center justify-center gap-5;
 }
 
 .social-icons span {
-    width: 40px;
-
-    height: 40px;
-
-    border-radius: 50%;
-
-    background-color: #eeeeee;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    color: #555;
-
-    font-size: 18px;
-
-    font-weight: 600;
+    @apply flex h-10 w-10 items-center justify-center rounded-full bg-[#eee] text-lg font-semibold text-[#555];
 }
-
-
-/* Copyright */
 
 .copyright {
-    margin: 0;
-
-    color: #555;
-
-    font-size: 14px;
+    @apply mt-5 text-xs text-[#777];
 }
-
 
 /* ==================================================
-   RESPONSIVE
+   TABLET RESPONSIVE STYLES
 ================================================== */
 
-@media (max-width: 1000px) {
-
-    .app-section {
-        gap: 50px;
+@media (max-width: 900px) {
+    .service-list {
+        @apply grid-cols-3 gap-y-[30px];
     }
 
-    .property-tabs {
-        grid-template-columns: repeat(4, 1fr);
+    .why-list {
+        @apply grid-cols-2;
+    }
+
+    .business-content {
+        @apply gap-[30px];
+    }
+
+    .business-image,
+    .business-info {
+        @apply w-1/2;
+    }
+
+    .difference-list {
+        @apply gap-[15px];
+    }
+
+    .difference-circle {
+        @apply h-[150px] w-[150px];
+    }
+
+    .difference-circle span {
+        @apply text-[25px];
+    }
+
+    .difference-item p {
+        @apply text-base;
+    }
+
+    .testimonial-list {
+        @apply gap-[15px];
+    }
+
+    .testimonial-card {
+        @apply p-[15px];
+    }
+
+    .property-category-tabs {
+        justify-content: flex-start;
+    }
+
+    .property-category-tab {
+        flex: 1 1 22%;
+        white-space: normal;
     }
 
     .property-links {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-}
-
-
-@media (max-width: 700px) {
-
-    .app-section {
-        flex-direction: column;
-
-        gap: 30px;
-
-        padding: 40px 5%;
-    }
-
-    .app-image,
-    .app-content {
-        width: 100%;
-
-        text-align: center;
-    }
-
-    .app-content h2 {
-        font-size: 25px;
-    }
-
-    .app-content p {
-        margin-bottom: 30px;
-    }
-
-    .app-buttons {
-        justify-content: center;
-    }
-
-    .property-tabs {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .property-links {
-        grid-template-columns: 1fr;
+        width: 90%;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
     }
 
     .service-columns {
-        grid-template-columns: 1fr;
+        @apply gap-[30px];
+    }
+}
 
-        gap: 40px;
+/* ==================================================
+   MOBILE RESPONSIVE STYLES
+================================================== */
+
+@media (max-width: 600px) {
+    .loan-banner {
+        @apply p-3;
+    }
+
+    .loan-content {
+        @apply flex-wrap text-center;
+    }
+
+    .service-list {
+        @apply grid-cols-2 px-[3%] py-[25px];
+    }
+
+    .why-list {
+        @apply grid-cols-1;
+    }
+
+    .section-title {
+        @apply mb-[30px];
+    }
+
+    .section-title h2 {
+        @apply mx-3 whitespace-normal text-center text-[21px];
+    }
+
+    .business-content {
+        @apply flex-col gap-5;
+    }
+
+    .business-image,
+    .business-info {
+        @apply w-full;
+    }
+
+    .business-info {
+        @apply items-center text-center;
+    }
+
+    .business-info > p {
+        @apply mb-5;
+    }
+
+    .business-image img {
+        @apply h-auto max-w-full;
+    }
+
+    .difference-list {
+        @apply grid-cols-1 gap-[35px];
+    }
+
+    .difference-circle {
+        @apply mb-[15px] h-[150px] w-[150px];
+    }
+
+    .difference-item p {
+        @apply text-base;
+    }
+
+    .customers-section {
+        @apply px-[4%] py-[35px];
+    }
+
+    .customers-section > h2 {
+        @apply text-[23px];
+    }
+
+    .customer-video {
+        @apply mb-[30px] h-[230px];
+    }
+
+    .testimonial-list {
+        @apply grid-cols-1;
+    }
+
+    .app-section {
+        @apply flex-col gap-[25px] text-center;
+    }
+
+    .app-content {
+        @apply items-center;
+    }
+
+    .app-content h2 {
+        @apply text-2xl;
+    }
+
+    .property-category-tabs {
+        justify-content: flex-start;
+        gap: 0;
+    }
+
+    .property-category-tab {
+        flex: 1 1 45%;
+        padding: 12px 6px;
+        font-size: 12px;
+        white-space: normal;
+    }
+
+    .property-links {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .service-columns {
+        @apply grid-cols-1 gap-10;
     }
 
     .property-actions {
-        grid-template-columns: 1fr;
+        @apply grid-cols-1;
     }
 
     .property-action:first-child {
-        border-right: none;
-
-        border-bottom: 1px solid #ccc;
+        @apply border-b border-r-0 border-[#ccc];
     }
 
     .footer-links {
+        @apply gap-5;
+    }
+}
+
+
+
+
+/* BUILDER ENQUIRY SECTION */
+
+.builder-enquiry-section {
+    width: 100%;
+    padding: 35px 5%;
+    box-sizing: border-box;
+}
+
+.builder-enquiry-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    padding: 25px 35px;
+    min-height: 300px;
+    box-sizing: border-box;
+    border-radius: 24px;
+
+    background-color: #fff5f2;
+    background-image: url("https://assets.nobroker.in/nob-common/BannerImageBg.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.builder-enquiry-image {
+    flex: 0 1 38%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.builder-enquiry-image img {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    max-height: 290px;
+    object-fit: contain;
+}
+
+.builder-enquiry-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.builder-enquiry-content h2 {
+    margin: 0 0 15px;
+    color: #222;
+    font-size: 26px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.builder-enquiry-benefits {
+    margin-bottom: 22px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.builder-enquiry-benefits span {
+    margin: 0 8px;
+    color: #aaa;
+}
+
+.builder-enquiry-form {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+    width: 100%;
+}
+
+.builder-enquiry-form input {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+    height: 52px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    background: white;
+    color: #333;
+    font-size: 15px;
+    outline: none;
+}
+
+.builder-enquiry-form input:focus {
+    border-color: #f82e54;
+}
+
+.builder-enquiry-form button {
+    flex-shrink: 0;
+    padding: 0 24px;
+    border: none;
+    border-radius: 12px;
+    background: #f82e54;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.builder-enquiry-form button:hover {
+    background: #dc2145;
+}
+
+.builder-enquiry-contact {
+    margin-top: 20px;
+    color: #555;
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    .builder-enquiry-banner {
         gap: 20px;
+        padding: 20px;
     }
 
+    .builder-enquiry-content h2 {
+        font-size: 22px;
+    }
+
+    .builder-enquiry-form {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .builder-enquiry-section {
+        padding: 20px 4%;
+    }
+
+    .builder-enquiry-banner {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .builder-enquiry-image {
+        width: 100%;
+    }
+
+    .builder-enquiry-image img {
+        max-height: 220px;
+    }
+
+    .builder-enquiry-content h2 {
+        font-size: 21px;
+    }
+
+    .builder-enquiry-form {
+        flex-direction: column;
+    }
+
+    .builder-enquiry-form input,
+    .builder-enquiry-form button {
+        width: 100%;
+        min-height: 48px;
+    }
+}
+
+
+
+/* =========================================
+   INVESTMENT SEARCH BANNER
+   Builder Enquiry Page
+========================================= */
+
+.builder-page {
+    width: 100%;
+    overflow-x: hidden;
+    background: #fff;
+}
+
+.investment-banner {
+    position: relative;
+    isolation: isolate;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 470px;
+    padding: 42px 0 44px;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+
+    background: linear-gradient(
+        180deg,
+        #ce3540,
+        #e94a57
+    );
+
+    border-radius: 0 0 48px 48px;
+    box-shadow: 0 4px 40px rgba(92, 0, 0, 0.25);
+}
+
+.investment-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background-image: url(
+        "https://assets.nobroker.in/nob-common/DesktopPatternBg.webp"
+    );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    pointer-events: none;
+}
+
+/* Header */
+
+.investment-header {
+    width: 80%;
+    max-width: 1240px;
+    min-height: 46px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.investment-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+
+    width: 96px;
+    height: 96px;
+
+    color: #fff;
+    text-decoration: none;
+}
+
+.investment-logo img {
+    display: block;
+    width: 96px;
+    height: 96px;
+    max-width: none;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.investment-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.investment-city,
+.investment-login {
+    height: 44px;
+    padding: 0 16px;
+    border: none;
+    border-radius: 30px;
+
+    background: #fff;
+    color: #383838;
+
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.investment-city {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.investment-city span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #eee;
+}
+
+/* Heading */
+
+.investment-title {
+    margin: 24px auto 0;
+    padding: 0 20px;
+
+    font-size: clamp(32px, 3vw, 48px);
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+/* Statistics */
+
+.investment-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    width: fit-content;
+    margin: 26px auto 0;
+    padding: 9px 18px;
+
+    border-radius: 40px;
+    background: #be2c37;
+
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.investment-stats i {
+    width: 2px;
+    height: 22px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* Search tabs and form */
+
+.investment-search {
+    width: 850px;
+    max-width: calc(100% - 48px);
+    margin: 26px auto 0;
+    text-align: left;
+}
+
+.investment-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.investment-tab {
+    padding: 12px 26px;
+    border: none;
+    border-radius: 40px;
+
+    background: rgba(154, 68, 68, 0.52);
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.investment-tab.active {
+    background: #fff;
+    color: #383838;
+}
+
+.investment-search-fields {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 198px;
+    align-items: stretch;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.investment-field {
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 96px;
+    padding: 16px 18px 12px;
+
+    border: 1px solid #eee;
+    border-radius: 17px;
+
+    background: #fff;
+    color: #333;
+}
+
+.investment-field label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 9px;
+
+    color: #888;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.investment-field label span {
+    color: #aaa;
+    font-size: 19px;
+}
+
+.investment-field input,
+.investment-field select {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    padding: 0;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+    color: #333;
+
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.investment-field input::placeholder {
+    color: #333;
+    opacity: 1;
+}
+
+.investment-field select {
+    cursor: pointer;
+}
+
+.investment-submit {
+    min-width: 0;
+    border: none;
+    border-radius: 17px;
+
+    background: #282828;
+    color: #fff;
+
+    font-size: 23px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.investment-submit:hover {
+    background: #111;
+}
+
+/* Laptop sizing */
+
+@media (min-width: 1101px) {
+    .investment-banner {
+        min-height: 470px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .investment-header {
+        width: 88%;
+    }
+
+    .investment-title {
+        font-size: 36px;
+    }
+
+    .investment-search-fields {
+        grid-template-columns: 1.2fr 1fr 140px;
+        gap: 12px;
+    }
+
+    .investment-stats {
+        gap: 12px;
+        font-size: 15px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+    .investment-banner {
+        min-height: auto;
+        padding: 28px 0 32px;
+        border-radius: 0 0 28px 28px;
+    }
+
+    .investment-header {
+        width: 90%;
+    }
+
+    /* .investment-logo {
+        font-size: 18px;
+    } */
+
+    .investment-logo {
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+    }
+
+    .investment-header-actions {
+        gap: 8px;
+    }
+
+    .investment-city,
+    .investment-login {
+        height: 38px;
+        padding: 0 10px;
+        font-size: 13px;
+    }
+
+    .investment-title {
+        margin-top: 28px;
+        font-size: 30px;
+    }
+
+    .investment-stats {
+        flex-wrap: wrap;
+        max-width: 90%;
+        gap: 8px;
+        font-size: 13px;
+    }
+
+    .investment-stats i {
+        height: 16px;
+    }
+
+    .investment-search {
+        max-width: 90%;
+    }
+
+    .investment-tabs {
+        gap: 8px;
+    }
+
+    .investment-tab {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    .investment-search-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .investment-submit {
+        min-height: 55px;
+    }
+}
+
+
+
+/* =========================================
+   PROJECT NAME SEARCH
+========================================= */
+
+.project-search-mode .investment-search-fields {
+    grid-template-columns: minmax(0, 1fr) 198px;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.project-search-mode .investment-field {
+    width: 100%;
+    min-height: 88px;
+    padding: 16px 18px 12px;
+}
+
+.project-name-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    object-fit: contain;
+}
+
+.project-search-mode .investment-submit {
+    min-height: 88px;
+}
+
+/* =========================================
+   CITY SELECTION MODAL
+========================================= */
+
+.city-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    box-sizing: border-box;
+
+    background: rgba(0, 0, 0, 0.48);
+}
+
+.city-modal {
+    width: 100%;
+    max-width: 615px;
+    overflow: hidden;
+
+    border-radius: 22px;
+    background: #fff;
+    color: #111;
+
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+
+    animation: city-modal-appear 0.18s ease-out;
+}
+
+.city-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 64px;
+    padding: 0 18px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.city-modal-header h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.city-modal-close {
+    display: none;
+
+    border: none;
+    background: transparent;
+    color: #555;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.city-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 28px 12px;
+
+    padding: 34px 24px 38px;
+}
+
+.city-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+
+    min-width: 0;
+    padding: 2px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+
+    background: transparent;
+    color: #111;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.city-option img {
+    display: block;
+    width: 56px;
+    height: 56px;
+
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.city-option span {
+    text-align: center;
+}
+
+.city-option:hover {
+    background: #f7f7f7;
+}
+
+.city-option.selected {
+    border-color: #e94a57;
+    background: #fff5f6;
+}
+
+@keyframes city-modal-appear {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 700px) {
+    .project-search-mode .investment-search-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .project-search-mode .investment-submit {
+        min-height: 55px;
+    }
+
+    .city-modal {
+        max-width: 420px;
+        border-radius: 18px;
+    }
+
+    .city-modal-header {
+        min-height: 58px;
+    }
+
+    .city-modal-header h2 {
+        font-size: 18px;
+    }
+
+    .city-modal-close {
+        display: block;
+    }
+
+    .city-grid {
+        gap: 22px 8px;
+        padding: 24px 12px 28px;
+    }
+
+    .city-option img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .city-option {
+        font-size: 12px;
+    }
 }

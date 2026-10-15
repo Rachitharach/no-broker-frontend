@@ -1,0 +1,661 @@
+
+/* =====================================
+   MAIN PAGE
+===================================== */
+
+.buyer-plans-page {
+    width: 100%;
+    color: #292929;
+    background: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.buyer-plans-page * {
+    box-sizing: border-box;
+}
+
+/* =====================================
+   HERO
+===================================== */
+
+.buyer-plans-hero {
+    padding: 45px 20px 20px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.buyer-plans-hero h1 {
+    margin: 0 0 14px;
+    font-size: 25px;
+    line-height: 1.35;
+    /* font-weight: 700; */
+    color: #303030;
+}
+
+.buyer-plans-hero h1 span {
+    color: #f55959;
+    font-size: 25px;
+}
+
+.buyer-plans-hero p {
+    margin: 0;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* =====================================
+   BENEFITS
+===================================== */
+
+.buyer-benefits {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 22px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0%;
+    padding: 15px 24px 15px;
+}
+
+.buyer-benefit {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 20px;
+    padding: 10px;
+    border: 1px solid #eeeeee;
+    border-radius: 6px;
+    background: #e2dede;
+    text-align: center;
+}
+
+
+.buyer-benefit img {
+    height: 22px;
+    margin-bottom: 0px;
+    object-fit: contain;
+}
+
+.buyer-benefit h3 {
+    margin: 0 0 7px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.buyer-benefit p {
+    margin: 0;
+    color: #777777;
+    font-size: 14px;
+}
+
+/* =====================================
+   PRICING COMPARISON LAYOUT
+===================================== */
+
+.buyer-pricing-section {
+    width: 100%;
+    padding: 0px 24px 40px;
+    background: #ffffff;
+}
+
+.buyer-plan-comparison {
+    display: grid;
+    grid-template-columns: 1.15fr 3.2fr;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+    max-width: 1460px;
+    margin: 0 auto;
+}
+
+/* =====================================
+   LEFT FEATURE COLUMN
+===================================== */
+
+.buyer-feature-column {
+    min-width: 0;
+    border: 1px solid #e4e4e4;
+    border-right: 0;
+    border-radius: 5px 0 0 0;
+    overflow: hidden;
+    transition: box-shadow .3s;
+}
+
+.buyer-feature-column-header {
+    height: 312px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.buyer-feature-column-header h2 {
+    margin: 0;
+    color: #333333;
+    font-size: 22px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+/* Feature rows */
+
+.buyer-feature-rows {
+    width: 100%;
+}
+
+.buyer-feature-row {
+    min-height: 49px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 12px;
+    color: #333333;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.buyer-feature-row:nth-child(odd) {
+    background: #e9f6f1;
+}
+
+.buyer-feature-row:nth-child(even) {
+    background: #eeedf6;
+}
+
+.buyer-feature-icon {
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.buyer-feature-row span {
+    min-width: 0;
+}
+
+/* =====================================
+   PLAN CARDS
+===================================== */
+
+.buyer-plan-cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 0;
+    min-width: 0;
+}
+
+.buyer-plan-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    margin: 0;
+    border: 1px solid #e4e4e4;
+    border-radius: 0;
+    background: #ffffff;
+    box-shadow: none;
+    transition: box-shadow .3s;
+}
+
+.buyer-plan-card:hover {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+
+/* Recommended plan */
+
+.buyer-plan-card.popular-plan {
+    z-index: 1;
+    background: #faf8f4;
+    border-color: #ded8d0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* .buyer-popular-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #beb8b9;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+} */
+
+/* =====================================
+   PLAN HEADER AREA
+===================================== */
+
+.buyer-plan-card-top {
+    height: 312px;
+    min-height: 312px;
+    padding: 12px 14px 15px;
+    text-align: center;
+}
+/* 
+.buyer-plan-card.popular-plan .buyer-plan-card-top {
+    padding-top: 38px;
+} */
+
+.buyer-plan-card-top h3 {
+    min-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 10px;
+    color: #292929;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+    overflow-wrap: anywhere;
+}
+
+.buyer-plan-price {
+    margin-bottom: 12px;
+    color: #292929;
+    font-size: 27px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+/* GST button */
+
+.buyer-gst-button {
+    display: inline-block;
+    margin: 0 0 15px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #777777;
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.buyer-gst-button:hover {
+    color: #333333;
+}
+
+/* GST breakdown */
+
+.buyer-gst-breakdown {
+    margin: -8px 0 12px;
+    padding: 8px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    background: #ffffff;
+    text-align: left;
+    font-size: 11px;
+}
+
+.buyer-gst-breakdown p {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 6px;
+    margin: 0;
+    padding: 6px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.buyer-gst-breakdown p:last-child {
+    border-bottom: 0;
+}
+
+.buyer-gst-breakdown strong {
+    white-space: nowrap;
+}
+
+/* Subscribe */
+
+.buyer-subscribe-button {
+    width: 100%;
+    min-height: 39px;
+    padding: 9px 5px;
+    border: 0;
+    border-radius: 2px;
+    background: #08b58d;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.buyer-subscribe-button:hover {
+    background: #079c79;
+}
+
+/* Plan description */
+
+.buyer-plan-description {
+    min-height: 55px;
+    margin: 12px 0 0;
+    color: #444444;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* =====================================
+   CHECKMARK COMPARISON ROWS
+===================================== */
+
+.buyer-feature-checks {
+    width: 100%;
+    margin-top: 0;
+}
+
+.buyer-feature-check {
+    height: 49px;
+    min-height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    font-size: 16px;
+}
+
+.buyer-feature-check:nth-child(odd) {
+    background: #e9f6f1;
+}
+
+.buyer-feature-check:nth-child(even) {
+    background: #eeedf6;
+}
+
+.buyer-check {
+    color: #00a76f;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.buyer-unavailable {
+    color: #f8f5f5;
+    font-size: 20px;
+}
+
+.buyer-validity {
+    color: #444444;
+    font-size: 13px;
+}
+
+/* Pricing note */
+
+.buyer-plan-note {
+    max-width: 1460px;
+    margin: 20px auto 0;
+    color: #777777;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+/* =====================================
+   HOW ASSISTED PLANS WORK
+===================================== */
+
+.buyer-how-section {
+    padding: 60px 30px;
+    background: #f8f8f8;
+}
+
+.buyer-how-section > h2 {
+    margin: 0 0 35px;
+    color: #292929;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.buyer-how-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.buyer-how-grid article {
+    padding: 25px;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.buyer-how-grid article > span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 50%;
+    background: #e8f4e9;
+    color: #32834a;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.buyer-how-grid h3 {
+    margin: 0 0 12px;
+    font-size: 17px;
+    line-height: 1.4;
+}
+
+.buyer-how-grid p {
+    margin: 0;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* =====================================
+   FAQ
+===================================== */
+
+.buyer-faq-section {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 60px 25px;
+}
+
+.buyer-faq-section > h2 {
+    margin: 0 0 28px;
+    color: #292929;
+    text-align: center;
+    font-size: 27px;
+    line-height: 1.4;
+}
+
+.buyer-faq {
+    margin-bottom: 12px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+.buyer-faq > button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 20px;
+    border: 0;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #333333;
+    text-align: left;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.buyer-faq > button:hover {
+    background: #fafafa;
+}
+
+.buyer-faq-icon {
+    flex: 0 0 auto;
+    color: #159957;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.buyer-faq > p {
+    margin: 0;
+    padding: 0 20px 20px;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 1050px) {
+    .buyer-pricing-section {
+        padding-right: 12px;
+        padding-left: 12px;
+    }
+
+    .buyer-plan-comparison {
+        grid-template-columns: 190px minmax(760px, 1fr);
+        overflow-x: auto;
+    }
+
+    .buyer-feature-row {
+        gap: 8px;
+        padding-right: 8px;
+        padding-left: 8px;
+        font-size: 12px;
+    }
+
+    .buyer-feature-icon {
+        flex-basis: 25px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .buyer-plan-card-top {
+        padding-right: 9px;
+        padding-left: 9px;
+    }
+
+    .buyer-plan-card-top h3 {
+        font-size: 15px;
+    }
+
+    .buyer-plan-price {
+        font-size: 24px;
+    }
+
+    .buyer-subscribe-button {
+        font-size: 13px;
+    }
+
+    .buyer-how-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 600px) {
+    .buyer-plans-hero {
+        padding: 35px 16px 25px;
+    }
+
+    .buyer-plans-hero h1 {
+        font-size: 25px;
+    }
+
+    .buyer-plans-hero p {
+        font-size: 14px;
+    }
+
+    .buyer-benefits {
+        flex-direction: column;
+        gap: 14px;
+        padding: 10px 16px 30px;
+    }
+
+    .buyer-benefit {
+        min-height: 120px;
+    }
+
+    .buyer-pricing-section {
+        padding: 20px 8px 30px;
+    }
+
+    .buyer-plan-comparison {
+        grid-template-columns: 165px minmax(760px, 1fr);
+    }
+
+    .buyer-feature-column-header h2 {
+        font-size: 18px;
+    }
+
+    .buyer-feature-row {
+        gap: 5px;
+        padding-right: 6px;
+        padding-left: 6px;
+        font-size: 11px;
+    }
+
+    .buyer-feature-icon {
+        flex-basis: 21px;
+        width: 21px;
+        height: 21px;
+    }
+
+    .buyer-plan-card-top h3 {
+        font-size: 14px;
+    }
+
+    .buyer-plan-price {
+        font-size: 23px;
+    }
+
+    .buyer-how-section {
+        padding: 40px 16px;
+    }
+
+    .buyer-how-section > h2 {
+        font-size: 22px;
+    }
+
+    .buyer-how-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .buyer-faq-section {
+        padding: 40px 16px;
+    }
+
+    .buyer-faq-section > h2 {
+        font-size: 23px;
+    }
+
+    .buyer-faq > button {
+        padding: 15px;
+        font-size: 14px;
+    }
+}

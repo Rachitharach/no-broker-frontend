@@ -1,0 +1,8 @@
+/* Hide scrollbar while keeping horizontal scrolling */
+.testimonials-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonials-scroll {
+    scrollbar-width: none;
+}

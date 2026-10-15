@@ -1,0 +1,244 @@
+
+/* Main page layout */
+.info-page {
+    max-width: 1228px;
+    margin: 24px auto;
+    border: 1px solid #d1d5db;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+/* Sidebar */
+.info-sidebar {
+    padding: 22px 12px;
+    border-right: 1px solid #d1d5db;
+    box-sizing: border-box;
+}
+
+/* Sidebar navigation links */
+.info-sidebar-link {
+    display: block;
+    padding: 13px 16px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.info-sidebar-link:hover {
+    background-color: #f1f1f1;
+    color: #ff385c;
+}
+
+/* Currently selected sidebar link */
+.info-sidebar-link.active {
+    color: #fff;
+    background-color: #929697;
+}
+
+/* Main content */
+.info-main {
+    padding: 20px 22px;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* Page heading */
+.info-title {
+    font-size: 27px;
+    font-weight: 600;
+    border-bottom: 1px solid #d1d5db;
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+/* Page text and content */
+.info-content {
+    font-size: 15px;
+    overflow-wrap: anywhere;
+}
+
+.info-content p {
+    margin: 0 0 16px;
+}
+
+.info-content ul {
+    padding-left: 24px;
+    margin: 12px 0 18px;
+}
+
+.info-content li {
+    margin-bottom: 8px;
+}
+
+.info-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0 10px;
+}
+
+/* Terms & Conditions text imported from .txt */
+.terms-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #444;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+/* Links inside the page content */
+.info-content a,
+.info-not-found a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.info-content a:hover,
+.info-not-found a:hover {
+    text-decoration: underline;
+}
+
+/* Page not found */
+.info-not-found {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Responsive layout for tablets and mobile phones */
+@media (max-width: 768px) {
+    .info-page {
+        grid-template-columns: 1fr;
+        margin: 16px;
+    }
+
+    .info-sidebar {
+        border-right: none;
+        border-bottom: 1px solid #d1d5db;
+        padding: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .info-sidebar-link {
+        padding: 9px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+
+    .info-main {
+        padding: 18px;
+    }
+
+    .info-title {
+        font-size: 23px;
+    }
+
+    .terms-text {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+}
+
+
+/* Terms and Conditions */
+
+
+.terms-text {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #333;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+
+.terms-page {
+    max-width: 1228px;
+    margin: 24px auto;
+    padding: 24px;
+    border: 1px solid #d1d5db;
+    box-sizing: border-box;
+    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.terms-page .info-title {
+    font-size: 27px;
+    font-weight: 600;
+    border-bottom: 1px solid #d1d5db;
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+/* .terms-text {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #333;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+} */
+
+@media (max-width: 768px) {
+    .terms-page {
+        margin: 16px;
+        padding: 18px;
+    }
+
+    .terms-page .info-title {
+        font-size: 23px;
+    }
+}
+
+
+
+/* Terms & Conditions page without sidebar */
+.terms-page {
+    max-width: 1228px;
+    margin: 24px auto;
+    padding: 24px;
+    border: 1px solid #d1d5db;
+    box-sizing: border-box;
+    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.terms-page .info-title {
+    font-size: 27px;
+    font-weight: 600;
+    border-bottom: 1px solid #d1d5db;
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.terms-text {
+    font-size: 14px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+    .terms-page {
+        margin: 16px;
+        padding: 18px;
+    }
+
+    .terms-page .info-title {
+        font-size: 23px;
+    }
+}
